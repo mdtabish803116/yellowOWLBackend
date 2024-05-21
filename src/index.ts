@@ -26,7 +26,7 @@ app.get("/api", (req: express.Request, res: express.Response) => {
 const PORT = process.env.PORT || 3001
 
 connectDataBase().then(() => {
-    app.listen(3001 , () => {
+    app.listen(PORT , () => {
         console.log(`Server running at ${PORT}`)
     })
 })
