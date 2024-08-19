@@ -10,7 +10,6 @@ export const createStudent = async (
 
     if (isEmailExist) {
       return res
-        .status(400)
         .send({ error: true, message: "This email already exist." });
     }
 
